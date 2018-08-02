@@ -1,3 +1,6 @@
+'''
+    Feito em flask basicão msm
+'''
 from flask import Flask, jsonify, request
 from bs4 import BeautifulSoup
 import requests
