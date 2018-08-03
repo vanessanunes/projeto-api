@@ -39,6 +39,6 @@ class Locatario(db.Model):
         self.nome = nome
 
     def __repr__(self):
-        return '<Locatario %r>' % self.nome
+        return '<Locatario %d %r>' % (self.id, self.nome)
 
 
