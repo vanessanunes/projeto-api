@@ -11,18 +11,20 @@ class Sala(db.Model):
         self.nome_sala = nome_sala
 
     def __repr__(self):
-        return '<Sala %r>' % self.nome_sala
+        return '<Sala %d>' % self.id
 
 class Agendamento(db.Model):
     id_agendamento = db.Column(db.Integer, primary_key=True)
     id_sala = db.Column(db.Integer, db.ForeignKey('sala.id'), nullable=False)
     id_locatario = db.Column(db.Integer, db.ForeignKey('locatario.id'), nullable=False)
-    horario = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    horario = db.Column(db.String, nullable=False, default=datetime.utcnow)
+    data = db.Column(db.String, nullable=False, default=datetime.utcnow)
 
-    def __init__(self, id_sala, id_locatario, horario):
+    def __init__(self, id_sala, id_locatario, horario, data):
         self.id_sala = id_sala
         self.id_locatario = id_locatario
         self.horario = horario
+        self.data = data
 
     # category = db.relationship('Sala', backref=db.backref('posts', lazy=True))
     # sala = db.relationship('Sala', foreign_keys=sala_id)
@@ -39,6 +41,6 @@ class Locatario(db.Model):
         self.nome = nome
 
     def __repr__(self):
-        return '<Locatario %d %r>' % (self.id, self.nome)
+        return '<Locatario %r>' % (self.nome)
 
 
