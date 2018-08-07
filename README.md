@@ -1,35 +1,102 @@
-# aprendendo-api
+# projeto-api
+
+Desenvolvido utilizando Python 3, framework Flask, e as bibliotecas Flask-RESTful, Flask-SQLAlchemy, BeautifulSoup, logging..
+
+## Mão na massa
+
+Clone esse repositório com:
+ 
+ ```git clone https://github.com/vanessanunes/aprendendo-api.git```
 
 
-## Criar virtualenv:
+Crie um ambiente virtual:
 
-```python3 -m venv myvenv```
-
-
-## Para entrar no virtualenv:
-
-```. myvenv/bin/activate```
+```python -m venv myvenv```
 
 
-## Execute o requirements
+Para entrar no virtualenv:
 
-```$ venv/bin/pip3 install -r requirements.txt```
+Linux: ```. myvenv/bin/activate``` ou Windows: ```source myvenv/Script/activate```
+
+Instale as bibliotecas necessárias com o comando abaixo:
+
+```$ pip install -r requirements.txt```
+
+Para rodar, use:
+```python run.py```
+
+__Para utilizar, você pode instalar o *Postman* em seu computador, ou usar os comandos `curl`, de qualquer forma os protocolos e parametros devem ser usandos da mesma forma.__ 
 
 
+## Comandos
+
+```curl http://127.0.0.1:5000/```
+Se a resposta for "TRUE" significa que a request foi feita com sucesso, caso contrário, não
+
+###Locatario
+
+Adicionar novo locatario:
+
+```curl http://127.0.0.1:5000/locatario/novo/nome=<string:nome> -X POST```
+
+Listar locatarios:
+
+```curl http://127.0.0.1:5000/locatario/listar -X GET```
+
+###Sala
+
+Adicionar nova sala:
+
+```curl "http://127.0.0.1:5000/sala/novo/nome=<string:nome>&numero=<int:numero>" -X POST```
+
+Listar salas:
+
+```curl http://127.0.0.1:5000/sala/listar -X GET```
+
+Editar sala:
+
+```curl "http://127.0.0.1:5000/sala/editar/id=<int:id>&nome=<string:nome>&numero=<int:numero>" -X PUT```
+
+Excluir sala:
+
+```curl "http://127.0.0.1:5000/sala/excluir/id=<int:id>" -X DELETE```
+
+### Agendamento
+
+Adicionar novo agendamento:
+
+__a data deve ser enviada dessa forma: ```08-08-2018```, já a hora: ```09:30```__
+
+Exemplo: ```curl "http://127.0.0.1:5000/agendamento/novo/sala=3&locatario=6&data=09-08-2018&hora_inicio=09:30&hora_fim=11:30" -X POST```
+
+```curl "http://127.0.0.1:5000/agendamento/novo/sala=<int:sala>&locatario=<int:locatario>&data=<string:data>&hora_inicio=<string:hora_inicio>&hora_fim=<string:hora_fim>" -X POST```
+
+Listar agendamento:
+
+```curl http://127.0.0.1:5000/agendamento/listar -X GET```
+
+Filtrar agendamento por sala:
+
+```curl http://127.0.0.1:5000/agendamento/filtrar/sala=<int:sala> -X GET```
+
+Filtrar agendamento por data:
+
+__A data deve ser inserida dessa forma: ```09-09-2018```__
+
+```curl http://127.0.0.1:5000/agendamento/filtrar/data=<string:data> -X GET```
+
+Editar agendamento:
+
+```curl "http://127.0.0.1:5000/agendamento/editar/id=<int:id>&sala=<int:sala>&locatario=<int:locatario>&data=<string:data>&hora_inicio=<string:hora_inicio>&hora_fim=<string:hora_fim>" -X PUT```
+
+Excluir agendamento:
+```curl http://127.0.0.1:5000/agendamento/excluir/id=<int:id> -X DELETE```
 
 
-#####ler sobre
+#Logs
 
+O arquivo de log está em app/agenda/logs.txt
 
-Tutorial: https://codigosimples.net/2017/05/15/criando-uma-api-de-filmes-em-cartaz-usando-python-e-heroku/
+#Testes
 
-
-https://marshmallow.readthedocs.io/en/3.0/
-
---
-
-Ver data e horario - provavelmente precise separar
-horas - incluir data de termino e verificar se já está ocupado
-ver algum metodo pra transformar tipo o horario de fim e de inicio em "hash" e comprar entre esses dois valores pra acusar se já está sendo ou não usado esse horario
-Algo como:  _unix_time_millis(data), _unix_time_millis(prox_data)
-* Consegui um filter between que pode ajudar nisso :)
+Os arquivos de testes estão na pasta ```app/agenda/test/__init__.py```

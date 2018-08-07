@@ -1,6 +1,5 @@
 from app import db
 from datetime import datetime
-from marshmallow_sqlalchemy import ModelSchema
 
 class Sala(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -18,24 +17,18 @@ class Agendamento(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     id_sala = db.Column(db.Integer, db.ForeignKey('sala.id'), nullable=False)
     id_locatario = db.Column(db.Integer, db.ForeignKey('locatario.id'), nullable=False)
-    horario = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    # horario_inicio = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    # horario_fim = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    # data = db.Column(db.String, nullable=False, default=datetime.utcnow)
+    horario_inicio = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    horario_fim = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
-    def __init__(self, id_sala, id_locatario, horario):
+    def __init__(self, id_sala, id_locatario, horario_inicio, horario_fim):
         self.id_sala = id_sala
         self.id_locatario = id_locatario
-        self.horario = horario
-        # self.horario_inicio = horario_inicio
-        # self.horario_fim = horario_fim
+        self.horario_inicio = horario_inicio
+        self.horario_fim = horario_fim
 
-    # category = db.relationship('Sala', backref=db.backref('posts', lazy=True))
-    # sala = db.relationship('Sala', foreign_keys=sala_id)
-    # locatario = db.relationship('Locatario', foreign_keys=loca_id)
 
     def __repr__(self):
-        return '<Agendamento %d>' % self.id_sala
+        return '<Agendamento %d>' % self.id
 
 class Locatario(db.Model):
         id = db.Column(db.Integer, primary_key=True)
@@ -46,8 +39,4 @@ class Locatario(db.Model):
 
         def __repr__(self):
             return '<Locatario %r>' % (self.nome)
-
-class LocatarioSchema(ModelSchema):
-    class Meta:
-        model = Locatario
 

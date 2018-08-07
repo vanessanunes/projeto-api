@@ -1,31 +1,32 @@
 from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
 from app import app, db
-from app.agenda.models import Locatario, Sala, Agendamento, LocatarioSchema
-from datetime import date, datetime
-from marshmallow import Schema, fields, pprint
+from app.agenda.models import Locatario, Sala, Agendamento
+from datetime import datetime
+import logging
+import os.path
+basedir = os.path.abspath(os.path.dirname(__file__))
 
 api = Api(app)
 
-def verificar_agendas(agenda, horario, sala):
-    # import pdb; pdb.set_trace()
-    if not agenda:
-        # liberado
-        return False
+filename=os.path.join(basedir, 'logs.txt')
+# filename=filename,
+logging.basicConfig(filename=filename, level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+logging.debug('INICIANDO...')
 
-    if agenda.id_sala == sala and agenda.horario == horario:
-        # já tem cadastro
+def verificar_agendas(horario_inicio, horario_fim, sala):
+    if db.session.query(Agendamento).filter(Agendamento.horario_inicio.between(horario_inicio, horario_fim)).filter(
+        Agendamento.id_sala == sala).first():
         return True
 
+    return False
+
 class HelloWorld(Resource):
-    # tá ok
     def get(self):
+        logging.info('oins')
         return dict(hello='world')
 
-# class LocatarioSchema(Schema):
-#     nome = fields.Str()
-#     id = fields.Number()
-
+# LOCATARIO
 
 class NovoLocatario(Resource):
     def post(self, nome):
@@ -33,24 +34,21 @@ class NovoLocatario(Resource):
         db.session.add(new)
         try:
             db.session.commit()
-            print('OK')
-            return 'OK'
+            logging.info('Novo locatario salvo com sucesso')
+            return dict(resultado = 'TRUE')
         except:
-            print('NON')
-            return 'NON'
+            logging.info('Não foi possivel salvar locatario')
+            return dict(resultado='FALSE')
 
 
-class ListarPessoas(Resource):
+class ListarLocatario(Resource):
     def get(self):
-        # locatario = Locatario.query.order_by(Locatario.id).all()
         lista = Locatario.query.order_by(Locatario.id).all()
-        # schema = LocatarioSchema()
-        # result = schema.dump(lista)
-        # pprint(result)
         pessoas = {}
         for i in lista:
             pessoas['pessoa{}'.format(i.id)] = {'id':i.id, 'nome':i.nome}
-        return pessoas
+        logging.info('Retornando lista de locatarios na tela')
+        return dict(pessoas)
 
 # SALA
 
@@ -59,143 +57,166 @@ class NovaSala(Resource):
         new = Sala(numero, nome)
         db.session.add(new)
         try:
+            logging.info('Nova sala salva com sucesso')
             db.session.commit()
-            return 'OK'
+            return dict(resultado='TRUE', mensagem='Sala {} {} salva com sucesso'.format(numero, nome))
         except:
-            return 'NON'
+            logging.info('Não foi possivel salva sala')
+            return dict(resultado='FALSE')
 
 class ListarSala(Resource):
     def get(self):
-        # https: // marshmallow.readthedocs.io / en / 3.0 /
+        logging.info('Retornando lista de sala na tela')
         lista = Sala.query.order_by(Sala.id).all()
         salas = {}
         for i in lista:
             salas['sala{}'.format(i.id)] = {'sala': i.numero, 'nome': i.nome_sala}
-        return salas
+        return dict(salas)
 
-# não rolou ainda não
 class EditarSala(Resource):
     def put(self, id, nome, numero):
         edit = Sala.query.filter_by(id=id).first()
+        if not edit:
+            return 'Não encontramos esse registro'
+
         edit.nome_sala = nome
         edit.numero = numero
         db.session.merge(edit)
         try:
+            logging.info('Sala editada com sucesso')
             db.session.commit()
-            return 'OK'
+            return dict(resultado='TRUE')
         except:
-            return 'NON'
+            logging.info('Não foi possivel editar sala')
+            return dict(resultado='FALSE')
 
 class ExcluirSala(Resource):
     def delete(self, id):
         delet = Sala.query.get(id)
         db.session.delete(delet)
         try:
+            logging.info('Sala escluida com sucesso')
             db.session.commit()
-            return 'OK'
+            return dict(resultado='TRUE')
         except:
-            return 'NON'
+            logging.info('Não foi possivel excluir Sala')
+            return dict(resultado='FALSE')
 
 # AGENDAMENTO
 
 class NovoAgendamento(Resource):
-    def post(self, sala, locatario, horario, data):
+    def post(self, sala, locatario, data, hora_inicio, hora_fim):
         data = datetime.strptime(data, '%d-%m-%Y')
-        horario = datetime.strptime(horario, '%H:%M')
-        horario = data.replace(hour=horario.hour, minute=horario.minute)
-        agenda = Agendamento.query.filter_by(id_sala=sala).first()
-        verificar = verificar_agendas(agenda, horario, sala)
+        hora_inicio = datetime.strptime(hora_inicio, '%H:%M')
+        hora_fim = datetime.strptime(hora_fim, '%H:%M')
+
+        horario_inicio = data.replace(hour=hora_inicio.hour, minute=hora_inicio.minute)
+        horario_fim = data.replace(hour=hora_fim.hour, minute=hora_fim.minute)
+
+        verificar = verificar_agendas(horario_inicio, horario_fim, sala)
 
         if verificar is True:
-            return 'Já existe horario cadastrado para essa sala. Tente outro.'
+            return dict(resultado='FALSE', mensagem='Já existe horario cadastrado para essa sala. Tente outro.')
 
-        new = Agendamento(sala, locatario, horario)
+        new = Agendamento(sala, locatario, horario_inicio, horario_fim)
         db.session.add(new)
 
         try:
             db.session.commit()
-            return 'OK'
+            logging.info('Novo agendamento feito com sucesso')
+            return dict(resultado='TRUE')
         except:
-            return 'NON'
+            logging.info('Não foi possivel cadastrar agendamento')
+            return dict(resultado='FALSE')
 
 class ListarAgendamento(Resource):
     def get(self):
         lista = Agendamento.query.order_by(Agendamento.id).all()
         agendamentos = {}
+        logging.info('Retornando lista de agendamento na tela')
         for i in lista:
-            horario = i.horario.strftime('%d/%m/%Y %H:%M')
-            # # # # # # # # # # # # # # # # # # #
-            #   VER COMO SERIALIZAR CERTOOOOOO  #
-            # # # # # # # # # # # # # # # # # # #
+            horario_inicio = i.horario_inicio.strftime('%d/%m/%Y %H:%M')
+            horario_fim = i.horario_fim.strftime('%d/%m/%Y %H:%M')
             agendamentos['agendamento{}'.format(i.id)] = {'sala': i.id_sala, 'locatario': i.id_locatario,
-                                                          'horario':horario}
-
-        return agendamentos
+                                                          'horario_inicio':horario_inicio, 'horario_fim':horario_fim}
+        return dict(agendamentos)
 
 class EditarAgendamento(Resource):
-    def put(self, id, sala, locatario, data, hora):
+    def put(self, id, sala, locatario, data, hora_inicio, hora_fim):
         edit = Agendamento.query.filter_by(id=id).first()
         edit.id_sala = sala
         edit.id_locatario = locatario
         data = datetime.strptime(data, '%d-%m-%Y')
-        horario = datetime.strptime(hora, '%H:%M')
-        horario = data.replace(hour=horario.hour, minute=horario.minute)
+        horario_inicio = datetime.strptime(hora_inicio, '%H:%M')
+        horario_fim = datetime.strptime(hora_fim, '%H:%M')
 
-        agenda = Agendamento.query.filter_by(horario=horario).first()
-        verificar = verificar_agendas(agenda, horario, sala)
+        horario_inicio = data.replace(hour=horario_inicio.hour, minute=horario_inicio.minute)
+        horario_fim = data.replace(hour=horario_fim.hour, minute=horario_fim.minute)
+
+        verificar = verificar_agendas(horario_inicio, horario_fim, sala)
+
         if verificar is True:
-            return 'Já existe agenda para essa sala e horario. Tente outro horario ou dia.'
+            return dict(resultado='FALSE', mensagem='Já existe agenda para essa sala e horario. Tente outro horario ou dia.')
 
-        edit.horario = horario
+        edit.horario_inicio = horario_inicio
+        edit.horario_fim = horario_fim
 
         db.session.merge(edit)
         try:
             db.session.commit()
-            return 'OK'
+            logging.info('Agendamento editado salva com sucesso')
+            return dict(resultado='TRUE')
         except:
-            return 'NON'
+            logging.info('Não foi possivel editar agendamento')
+            return dict(resultado='FALSE')
 
 class ExcluirAgendamento(Resource):
     def delete(self, id):
         excluir = Agendamento.query.get(id)
-        # excluir direito, primeiro verificar se existe, se não mostrar msg
-        # que não existe, se sim, excluir
+        if not excluir:
+            return 'id {} não existe'.format(id)
         db.session.delete(excluir)
         try:
             db.session.commit()
-            return 'OK'
+            logging.info('Agendamento excluido com sucesso')
+            return dict(resultado='TRUE')
         except:
-            return 'NON'
+            logging.info('Não foi possivel excluir agendamento')
+            return dict(resultado='FALSE')
 
 class FiltrarAgendamentoSala(Resource):
-    def post(self, sala):
+    def get(self, sala):
         salas = Agendamento.query.filter_by(id_sala=sala).all()
-        # import pdb ; pdb.set_trace()
         agendamentos = {}
         for i in salas:
-            horario = i.horario.strftime('%d/%m/%Y %H:%M')
+            horario_inicio = i.horario_inicio.strftime('%d-%m-%Y %H:%M')
+            horario_fim = i.horario_fim.strftime('%d-%m-%Y %H:%M')
             agendamentos['agendamento{}'.format(i.id)] = {'sala': i.id_sala, 'locatario': i.id_locatario,
-                                                          'horario': horario}
-        return agendamentos
+                                                          'horario_inicio': horario_inicio, 'horario_fim':horario_fim}
+        logging.info('Filtrando agendamento por sala: {}'.format(sala))
+        return dict(agendamentos)
+
 
 class FiltrarAgendamentoData(Resource):
-    def post(self, data):
+    def get(self, data):
         data_inicio = datetime.strptime(data, '%d-%m-%Y')
-        # 23:59 as 00:00
         data_fim = data_inicio.replace(hour=23, minute=59)
-        datas = Agendamento.query.order_by(horario=data).all()
-        datas = Agendamento.query.filter(Agendamento.horario.between(data_inicio, data_fim)).all()
+
+        datas = db.session.query(Agendamento).filter(Agendamento.horario_inicio.between(data_inicio, data_fim)).order_by(Agendamento.id).all()
+
         agendamentos = {}
         for i in datas:
-            horario = i.horario.strftime('%d/%m/%Y %H:%M')
+            h_inicio = i.horario_inicio.strftime('%d/%m/%Y %H:%M')
+            h_fim = i.horario_fim.strftime('%d/%m/%Y %H:%M')
             agendamentos['agendamento{}'.format(i.id)] = {'sala': i.id_sala, 'locatario': i.id_locatario,
-                                                          'horario': horario}
-        return agendamentos
+                                                          'horario_inicio': h_inicio, 'horario_fim':h_fim}
+        logging.info('Filtrando agendamento por data: {}'.format(data))
+        return dict(agendamentos)
 
 
 api.add_resource(HelloWorld, '/')
 api.add_resource(NovoLocatario, '/locatario/novo/nome=<string:nome>')
-api.add_resource(ListarPessoas, '/locatario/listar')
+api.add_resource(ListarLocatario, '/locatario/listar')
 
 api.add_resource(ListarSala, '/sala/listar')
 api.add_resource(NovaSala, '/sala/novo/nome=<string:nome>&numero=<int:numero>')
@@ -205,14 +226,10 @@ api.add_resource(ExcluirSala, '/sala/excluir/id=<int:id>')
 api.add_resource(ListarAgendamento, '/agendamento/listar')
 
 api.add_resource(FiltrarAgendamentoSala, '/agendamento/filtrar/sala=<int:sala>')
-api.add_resource(FiltrarAgendamentoData, '/agendamento/filtrar/data=<string:data>')
+api.add_resource(FiltrarAgendamentoData, '/agendamento/filtrar/data=<string:data>') # data apenas incluir o dia: 27-12-1993
 
-# api.add_resource(ListarAgendamento, '/agendamento/listar/sala=<int:id_sala>&horario=<int:horario>&data=data')
 
-api.add_resource(NovoAgendamento, '/agendamento/novo/sala=<int:sala>&locatario=<int:locatario>&hora=<string:horario>&data=<string:data>')
-api.add_resource(EditarAgendamento, '/agendamento/editar/id=<int:id>&sala=<int:sala>&locatario=<int:locatario>&data=<string:data>&hora=<string:hora>')
+api.add_resource(NovoAgendamento, '/agendamento/novo/sala=<int:sala>&locatario=<int:locatario>&data=<string:data>&hora_inicio=<string:hora_inicio>&hora_fim=<string:hora_fim>')
+api.add_resource(EditarAgendamento, '/agendamento/editar/id=<int:id>&sala=<int:sala>&locatario=<int:locatario>&data=<string:data>&hora_inicio=<string:hora_inicio>&hora_fim=<string:hora_fim>')
 api.add_resource(ExcluirAgendamento, '/agendamento/excluir/id=<int:id>')
 
-
-
-# api.add_resource(NovoLocatario, '/locatario/<string:nome>')
