@@ -19,12 +19,16 @@ class Agendamento(db.Model):
     id_sala = db.Column(db.Integer, db.ForeignKey('sala.id'), nullable=False)
     id_locatario = db.Column(db.Integer, db.ForeignKey('locatario.id'), nullable=False)
     horario = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    # horario_inicio = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    # horario_fim = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     # data = db.Column(db.String, nullable=False, default=datetime.utcnow)
 
     def __init__(self, id_sala, id_locatario, horario):
         self.id_sala = id_sala
         self.id_locatario = id_locatario
         self.horario = horario
+        # self.horario_inicio = horario_inicio
+        # self.horario_fim = horario_fim
 
     # category = db.relationship('Sala', backref=db.backref('posts', lazy=True))
     # sala = db.relationship('Sala', foreign_keys=sala_id)
