@@ -33,7 +33,7 @@ _Para utilizar, você pode instalar o *Postman* em seu computador, ou usar os co
 ```curl http://127.0.0.1:5000/```
 Se a resposta for "TRUE" significa que a request foi feita com sucesso, caso contrário, não
 
-######Locatario
+###### Locatario
 
 Adicionar novo locatario:
 
@@ -43,7 +43,7 @@ Listar locatarios:
 
 ```curl http://127.0.0.1:5000/locatario/listar -X GET```
 
-######Sala
+###### Sala
 
 Adicionar nova sala:
 
@@ -61,7 +61,7 @@ Excluir sala:
 
 ```curl "http://127.0.0.1:5000/sala/excluir/id=<int:id>" -X DELETE```
 
-######Agendamento
+###### Agendamento
 
 Adicionar novo agendamento:
 
