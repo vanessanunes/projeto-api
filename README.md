@@ -97,8 +97,12 @@ Excluir agendamento:
 
 # Logs
 
-O arquivo de log está em app/agenda/logs.txt
+O arquivo de log está em ```app/agenda/logs.txt```
 
 # Testes
 
-Os arquivos de testes estão na pasta ```app/agenda/test/__init__.py```
+Os arquivos de testes estão na pasta ```app/agenda/test/test_agenda.py```
+
+Para rodar: 
+
+```python test_agenda.py```
