@@ -93,10 +93,10 @@ Excluir agendamento:
 ```curl http://127.0.0.1:5000/agendamento/excluir/id=<int:id> -X DELETE```
 
 
-#Logs
+# Logs
 
 O arquivo de log está em app/agenda/logs.txt
 
-#Testes
+# Testes
 
 Os arquivos de testes estão na pasta ```app/agenda/test/__init__.py```
