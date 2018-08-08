@@ -5,3 +5,651 @@
  2018-08-07 20:06:51,675 - INFO - 127.0.0.1 - - [07/Aug/2018 20:06:51] "GET /agendamento/listar HTTP/1.1" 200 -
  2018-08-07 20:06:52,297 - INFO - Retornando lista de agendamento na tela
  2018-08-07 20:06:52,298 - INFO - 127.0.0.1 - - [07/Aug/2018 20:06:52] "GET /agendamento/listar HTTP/1.1" 200 -
+ 2018-08-08 12:09:22,586 - DEBUG - INICIANDO...
+ 2018-08-08 12:10:51,419 - DEBUG - INICIANDO...
+ 2018-08-08 12:12:15,830 - DEBUG - INICIANDO...
+ 2018-08-08 12:12:29,547 - DEBUG - INICIANDO...
+ 2018-08-08 12:12:47,123 - DEBUG - INICIANDO...
+ 2018-08-08 12:12:58,109 - DEBUG - INICIANDO...
+ 2018-08-08 12:13:18,590 - DEBUG - INICIANDO...
+ 2018-08-08 14:54:24,412 - DEBUG - INICIANDO...
+ 2018-08-08 15:01:37,501 - DEBUG - INICIANDO...
+ 2018-08-08 15:02:12,851 - DEBUG - INICIANDO...
+ 2018-08-08 15:02:42,562 - DEBUG - INICIANDO...
+ 2018-08-08 15:03:28,964 - DEBUG - INICIANDO...
+ 2018-08-08 15:21:22,238 - DEBUG - INICIANDO...
+ 2018-08-08 15:21:22,427 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ 2018-08-08 15:21:22,430 - INFO -  * Restarting with stat
+ 2018-08-08 15:21:22,645 - DEBUG - INICIANDO...
+ 2018-08-08 15:21:22,663 - WARNING -  * Debugger is active!
+ 2018-08-08 15:21:22,685 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 15:32:20,095 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 15:32:20,096 - INFO - 127.0.0.1 - - [08/Aug/2018 15:32:20] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 15:32:51,438 - INFO - 127.0.0.1 - - [08/Aug/2018 15:32:51] "GET /locatario/novo/nome=Vanessa HTTP/1.1" 405 -
+ 2018-08-08 15:32:57,358 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 15:32:57,359 - INFO - 127.0.0.1 - - [08/Aug/2018 15:32:57] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 15:33:44,338 - DEBUG - INICIANDO...
+ 2018-08-08 15:34:56,763 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 15:34:56,764 - INFO - 127.0.0.1 - - [08/Aug/2018 15:34:56] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 15:37:10,302 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 15:37:10,303 - INFO - 127.0.0.1 - - [08/Aug/2018 15:37:10] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 15:38:19,356 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 15:38:19,357 - INFO - 127.0.0.1 - - [08/Aug/2018 15:38:19] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 15:38:19,424 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 15:38:19,425 - INFO - 127.0.0.1 - - [08/Aug/2018 15:38:19] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 15:38:35,607 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 15:38:35,607 - INFO - 127.0.0.1 - - [08/Aug/2018 15:38:35] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 15:38:35,665 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 15:38:35,666 - INFO - 127.0.0.1 - - [08/Aug/2018 15:38:35] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 15:44:18,675 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/app/agenda/views.py', reloading
+ 2018-08-08 15:44:18,712 - INFO -  * Restarting with stat
+ 2018-08-08 15:44:18,904 - DEBUG - INICIANDO...
+ 2018-08-08 15:45:17,440 - DEBUG - INICIANDO...
+ 2018-08-08 15:45:29,762 - DEBUG - INICIANDO...
+ 2018-08-08 15:45:42,593 - DEBUG - INICIANDO...
+ 2018-08-08 15:45:42,610 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ 2018-08-08 15:45:42,610 - INFO -  * Restarting with stat
+ 2018-08-08 15:45:42,802 - DEBUG - INICIANDO...
+ 2018-08-08 15:45:42,819 - WARNING -  * Debugger is active!
+ 2018-08-08 15:45:42,819 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 15:45:50,027 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 15:45:50,028 - INFO - 127.0.0.1 - - [08/Aug/2018 15:45:50] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 15:46:30,692 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 15:46:30,692 - INFO - 127.0.0.1 - - [08/Aug/2018 15:46:30] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 15:47:48,527 - INFO - 127.0.0.1 - - [08/Aug/2018 15:47:48] "POST /locatario/novo/id=2 HTTP/1.1" 404 -
+ 2018-08-08 15:47:48,624 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 15:47:48,625 - INFO - 127.0.0.1 - - [08/Aug/2018 15:47:48] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 15:48:18,806 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 15:48:18,806 - INFO - 127.0.0.1 - - [08/Aug/2018 15:48:18] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 15:48:18,809 - INFO - 127.0.0.1 - - [08/Aug/2018 15:48:18] "POST /locatario/novo/id=2 HTTP/1.1" 404 -
+ 2018-08-08 15:48:22,762 - INFO - 127.0.0.1 - - [08/Aug/2018 15:48:22] "POST /locatario/novo/id=2 HTTP/1.1" 404 -
+ 2018-08-08 15:48:57,663 - INFO - 127.0.0.1 - - [08/Aug/2018 15:48:57] "POST /locatario/excluir/id=2 HTTP/1.1" 405 -
+ 2018-08-08 15:49:15,540 - INFO - 127.0.0.1 - - [08/Aug/2018 15:49:15] "GET /locatario/excluir/id=5 HTTP/1.1" 405 -
+ 2018-08-08 15:49:19,184 - INFO - Locatario escluido com sucesso
+ 2018-08-08 15:49:19,247 - INFO - 127.0.0.1 - - [08/Aug/2018 15:49:19] "DELETE /locatario/excluir/id=5 HTTP/1.1" 200 -
+ 2018-08-08 15:49:28,478 - INFO - Locatario escluido com sucesso
+ 2018-08-08 15:49:28,530 - INFO - 127.0.0.1 - - [08/Aug/2018 15:49:28] "DELETE /locatario/excluir/id=2 HTTP/1.1" 200 -
+ 2018-08-08 15:49:32,263 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 15:49:32,264 - INFO - 127.0.0.1 - - [08/Aug/2018 15:49:32] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 15:49:32,364 - INFO - 127.0.0.1 - - [08/Aug/2018 15:49:32] "DELETE /locatario/excluir/id=2 HTTP/1.1" 500 -
+ 2018-08-08 15:49:52,512 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 15:49:52,513 - INFO - 127.0.0.1 - - [08/Aug/2018 15:49:52] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 15:49:58,064 - INFO - 127.0.0.1 - - [08/Aug/2018 15:49:58] "DELETE /locatario/excluir/id=2 HTTP/1.1" 500 -
+ 2018-08-08 15:50:09,333 - INFO - Locatario escluido com sucesso
+ 2018-08-08 15:50:09,386 - INFO - 127.0.0.1 - - [08/Aug/2018 15:50:09] "DELETE /locatario/excluir/id=3 HTTP/1.1" 200 -
+ 2018-08-08 15:50:14,367 - INFO - Locatario escluido com sucesso
+ 2018-08-08 15:50:14,428 - INFO - 127.0.0.1 - - [08/Aug/2018 15:50:14] "DELETE /locatario/excluir/id=4 HTTP/1.1" 200 -
+ 2018-08-08 15:50:19,806 - INFO - 127.0.0.1 - - [08/Aug/2018 15:50:19] "DELETE /locatario/excluir/id=4 HTTP/1.1" 500 -
+ 2018-08-08 15:50:24,162 - INFO - 127.0.0.1 - - [08/Aug/2018 15:50:24] "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 -
+ 2018-08-08 15:50:42,019 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 15:50:42,020 - INFO - 127.0.0.1 - - [08/Aug/2018 15:50:42] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 15:51:00,185 - INFO - 127.0.0.1 - - [08/Aug/2018 15:51:00] "DELETE /locatario/listar HTTP/1.1" 405 -
+ 2018-08-08 15:51:03,721 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 15:51:03,722 - INFO - 127.0.0.1 - - [08/Aug/2018 15:51:03] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 15:51:46,446 - INFO - Locatario escluido com sucesso
+ 2018-08-08 15:51:46,518 - INFO - 127.0.0.1 - - [08/Aug/2018 15:51:46] "DELETE /locatario/excluir/id=10 HTTP/1.1" 200 -
+ 2018-08-08 15:51:50,106 - INFO - Locatario escluido com sucesso
+ 2018-08-08 15:51:50,159 - INFO - 127.0.0.1 - - [08/Aug/2018 15:51:50] "DELETE /locatario/excluir/id=9 HTTP/1.1" 200 -
+ 2018-08-08 15:51:52,790 - INFO - Locatario escluido com sucesso
+ 2018-08-08 15:51:52,851 - INFO - 127.0.0.1 - - [08/Aug/2018 15:51:52] "DELETE /locatario/excluir/id=8 HTTP/1.1" 200 -
+ 2018-08-08 15:51:55,837 - INFO - Locatario escluido com sucesso
+ 2018-08-08 15:51:55,893 - INFO - 127.0.0.1 - - [08/Aug/2018 15:51:55] "DELETE /locatario/excluir/id=7 HTTP/1.1" 200 -
+ 2018-08-08 15:51:58,769 - INFO - Locatario escluido com sucesso
+ 2018-08-08 15:51:58,934 - INFO - 127.0.0.1 - - [08/Aug/2018 15:51:58] "DELETE /locatario/excluir/id=6 HTTP/1.1" 200 -
+ 2018-08-08 15:52:01,755 - INFO - 127.0.0.1 - - [08/Aug/2018 15:52:01] "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 -
+ 2018-08-08 15:59:42,606 - INFO - 127.0.0.1 - - [08/Aug/2018 15:59:42] "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 -
+ 2018-08-08 16:00:08,601 - INFO - 127.0.0.1 - - [08/Aug/2018 16:00:08] "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 -
+ 2018-08-08 16:01:44,212 - INFO - 127.0.0.1 - - [08/Aug/2018 16:01:44] "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 -
+ 2018-08-08 16:02:30,626 - INFO - 127.0.0.1 - - [08/Aug/2018 16:02:30] "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 -
+ 2018-08-08 16:03:46,171 - INFO - 127.0.0.1 - - [08/Aug/2018 16:03:46] "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 -
+ 2018-08-08 16:16:27,716 - DEBUG - INICIANDO...
+ 2018-08-08 16:16:41,186 - DEBUG - INICIANDO...
+ 2018-08-08 16:17:16,020 - DEBUG - INICIANDO...
+ 2018-08-08 16:20:43,254 - DEBUG - INICIANDO...
+ 2018-08-08 16:20:59,963 - DEBUG - INICIANDO...
+ 2018-08-08 16:21:00,417 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:21:00,445 - INFO - 127.0.0.1 - - [08/Aug/2018 16:21:00] "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 -
+ 2018-08-08 16:21:00,446 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 None
+ 2018-08-08 16:21:38,065 - DEBUG - INICIANDO...
+ 2018-08-08 16:21:38,524 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:21:38,553 - INFO - 127.0.0.1 - - [08/Aug/2018 16:21:38] "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 -
+ 2018-08-08 16:21:38,553 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 None
+ 2018-08-08 16:22:18,202 - DEBUG - INICIANDO...
+ 2018-08-08 16:22:18,843 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:22:18,848 - INFO - 127.0.0.1 - - [08/Aug/2018 16:22:18] "DELETE /locatario/novo/nome=Vanessa HTTP/1.1" 405 -
+ 2018-08-08 16:22:18,849 - DEBUG - http://localhost:5000 "DELETE /locatario/novo/nome=Vanessa HTTP/1.1" 405 70
+ 2018-08-08 16:22:26,858 - DEBUG - INICIANDO...
+ 2018-08-08 16:22:27,292 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:22:27,300 - INFO - 127.0.0.1 - - [08/Aug/2018 16:22:27] "GET /locatario/novo/nome=Vanessa HTTP/1.1" 405 -
+ 2018-08-08 16:22:27,301 - DEBUG - http://localhost:5000 "GET /locatario/novo/nome=Vanessa HTTP/1.1" 405 70
+ 2018-08-08 16:22:35,964 - DEBUG - INICIANDO...
+ 2018-08-08 16:22:35,981 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ 2018-08-08 16:22:35,981 - INFO -  * Restarting with stat
+ 2018-08-08 16:22:36,161 - DEBUG - INICIANDO...
+ 2018-08-08 16:22:36,178 - WARNING -  * Debugger is active!
+ 2018-08-08 16:22:36,179 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 16:22:38,465 - DEBUG - INICIANDO...
+ 2018-08-08 16:22:38,925 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:22:38,930 - INFO - 127.0.0.1 - - [08/Aug/2018 16:22:38] "GET /locatario/novo/nome=Vanessa HTTP/1.1" 405 -
+ 2018-08-08 16:22:38,932 - DEBUG - http://localhost:5000 "GET /locatario/novo/nome=Vanessa HTTP/1.1" 405 70
+ 2018-08-08 16:23:10,813 - DEBUG - INICIANDO...
+ 2018-08-08 16:23:11,938 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:23:12,083 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:23:12,084 - INFO - 127.0.0.1 - - [08/Aug/2018 16:23:12] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:23:12,085 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:23:20,480 - DEBUG - INICIANDO...
+ 2018-08-08 16:23:20,962 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:23:21,024 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:23:21,025 - INFO - 127.0.0.1 - - [08/Aug/2018 16:23:21] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:23:21,026 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:23:49,745 - INFO - 127.0.0.1 - - [08/Aug/2018 16:23:49] "GET /locatario/excluir/id=1 HTTP/1.1" 405 -
+ 2018-08-08 16:24:00,872 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:24:00,949 - INFO - 127.0.0.1 - - [08/Aug/2018 16:24:00] "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:24:02,922 - INFO - 127.0.0.1 - - [08/Aug/2018 16:24:02] "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 -
+ 2018-08-08 16:24:06,102 - INFO - 127.0.0.1 - - [08/Aug/2018 16:24:06] "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 -
+ 2018-08-08 16:24:58,331 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/app/agenda/views.py', reloading
+ 2018-08-08 16:24:58,398 - INFO -  * Restarting with stat
+ 2018-08-08 16:24:58,589 - DEBUG - INICIANDO...
+ 2018-08-08 16:24:58,605 - WARNING -  * Debugger is active!
+ 2018-08-08 16:24:58,605 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 16:25:10,373 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:25:10,375 - INFO - 127.0.0.1 - - [08/Aug/2018 16:25:10] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:25:19,789 - DEBUG - INICIANDO...
+ 2018-08-08 16:25:20,205 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:25:20,271 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:25:20,272 - INFO - 127.0.0.1 - - [08/Aug/2018 16:25:20] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:25:20,273 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:26:04,603 - DEBUG - INICIANDO...
+ 2018-08-08 16:26:05,458 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:26:05,468 - INFO - 127.0.0.1 - - [08/Aug/2018 16:26:05] "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 -
+ 2018-08-08 16:26:05,468 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=5 HTTP/1.1" 500 None
+ 2018-08-08 16:26:05,830 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:26:05,895 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:26:05,896 - INFO - 127.0.0.1 - - [08/Aug/2018 16:26:05] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:26:05,897 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:26:09,866 - DEBUG - INICIANDO...
+ 2018-08-08 16:26:10,235 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:26:10,241 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:26:10,296 - INFO - 127.0.0.1 - - [08/Aug/2018 16:26:10] "DELETE /locatario/excluir/id=5 HTTP/1.1" 200 -
+ 2018-08-08 16:26:10,297 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=5 HTTP/1.1" 200 28
+ 2018-08-08 16:26:17,200 - DEBUG - INICIANDO...
+ 2018-08-08 16:26:17,720 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:26:17,786 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:26:17,787 - INFO - 127.0.0.1 - - [08/Aug/2018 16:26:17] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:26:17,787 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:26:24,830 - DEBUG - INICIANDO...
+ 2018-08-08 16:26:25,418 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:26:25,421 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:26:25,470 - INFO - 127.0.0.1 - - [08/Aug/2018 16:26:25] "DELETE /locatario/excluir/id=5 HTTP/1.1" 200 -
+ 2018-08-08 16:26:25,472 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=5 HTTP/1.1" 200 28
+ 2018-08-08 16:26:34,080 - DEBUG - INICIANDO...
+ 2018-08-08 16:26:34,551 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:26:34,562 - INFO - 127.0.0.1 - - [08/Aug/2018 16:26:34] "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 -
+ 2018-08-08 16:26:34,562 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 None
+ 2018-08-08 16:26:34,979 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:26:35,052 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:26:35,054 - INFO - 127.0.0.1 - - [08/Aug/2018 16:26:35] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:26:35,056 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:26:43,821 - DEBUG - INICIANDO...
+ 2018-08-08 16:26:44,228 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:26:44,241 - INFO - 127.0.0.1 - - [08/Aug/2018 16:26:44] "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 -
+ 2018-08-08 16:26:44,241 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 None
+ 2018-08-08 16:26:53,628 - DEBUG - INICIANDO...
+ 2018-08-08 16:26:54,061 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:26:54,089 - INFO - 127.0.0.1 - - [08/Aug/2018 16:26:54] "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 -
+ 2018-08-08 16:26:54,090 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 None
+ 2018-08-08 16:26:58,118 - DEBUG - INICIANDO...
+ 2018-08-08 16:26:58,509 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:26:58,519 - INFO - 127.0.0.1 - - [08/Aug/2018 16:26:58] "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 -
+ 2018-08-08 16:26:58,520 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 None
+ 2018-08-08 16:27:12,982 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:27:12,982 - INFO - 127.0.0.1 - - [08/Aug/2018 16:27:12] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:27:22,728 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:27:22,776 - INFO - 127.0.0.1 - - [08/Aug/2018 16:27:22] "DELETE /locatario/excluir/id=5 HTTP/1.1" 200 -
+ 2018-08-08 16:28:13,588 - DEBUG - INICIANDO...
+ 2018-08-08 16:28:14,345 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:28:14,347 - INFO - 127.0.0.1 - - [08/Aug/2018 16:28:14] "DELETE /locatario/listar HTTP/1.1" 405 -
+ 2018-08-08 16:28:14,348 - DEBUG - http://localhost:5000 "DELETE /locatario/listar HTTP/1.1" 405 70
+ 2018-08-08 16:28:25,375 - DEBUG - INICIANDO...
+ 2018-08-08 16:28:25,392 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ 2018-08-08 16:28:25,393 - INFO -  * Restarting with stat
+ 2018-08-08 16:28:25,582 - DEBUG - INICIANDO...
+ 2018-08-08 16:28:25,598 - WARNING -  * Debugger is active!
+ 2018-08-08 16:28:25,598 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 16:28:27,969 - DEBUG - INICIANDO...
+ 2018-08-08 16:28:28,383 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:28:28,389 - INFO - 127.0.0.1 - - [08/Aug/2018 16:28:28] "DELETE /locatario/listar HTTP/1.1" 405 -
+ 2018-08-08 16:28:28,390 - DEBUG - http://localhost:5000 "DELETE /locatario/listar HTTP/1.1" 405 70
+ 2018-08-08 16:28:48,832 - DEBUG - INICIANDO...
+ 2018-08-08 16:28:49,269 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:28:49,270 - INFO - 127.0.0.1 - - [08/Aug/2018 16:28:49] "DELETE /locatario/listar HTTP/1.1" 405 -
+ 2018-08-08 16:28:49,271 - DEBUG - http://localhost:5000 "DELETE /locatario/listar HTTP/1.1" 405 70
+ 2018-08-08 16:28:59,427 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:28:59,435 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:28:59,435 - INFO - 127.0.0.1 - - [08/Aug/2018 16:28:59] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:28:59,436 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 204
+ 2018-08-08 16:29:56,866 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:29:56,874 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:29:57,073 - INFO - 127.0.0.1 - - [08/Aug/2018 16:29:57] "DELETE /locatario/excluir/id=2 HTTP/1.1" 200 -
+ 2018-08-08 16:29:57,074 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=2 HTTP/1.1" 200 28
+ 2018-08-08 16:30:00,201 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:30:00,207 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:30:00,273 - INFO - 127.0.0.1 - - [08/Aug/2018 16:30:00] "DELETE /locatario/excluir/id=3 HTTP/1.1" 200 -
+ 2018-08-08 16:30:00,274 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=3 HTTP/1.1" 200 28
+ 2018-08-08 16:30:03,410 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:30:03,424 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:30:03,590 - INFO - 127.0.0.1 - - [08/Aug/2018 16:30:03] "DELETE /locatario/excluir/id=4 HTTP/1.1" 200 -
+ 2018-08-08 16:30:03,590 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=4 HTTP/1.1" 200 28
+ 2018-08-08 16:30:09,719 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:30:09,722 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:30:09,723 - INFO - 127.0.0.1 - - [08/Aug/2018 16:30:09] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:30:09,723 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:30:20,917 - DEBUG - INICIANDO...
+ 2018-08-08 16:30:21,453 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:30:21,467 - INFO - 127.0.0.1 - - [08/Aug/2018 16:30:21] "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 -
+ 2018-08-08 16:30:21,468 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 None
+ 2018-08-08 16:30:21,874 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:30:21,881 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:30:21,882 - INFO - 127.0.0.1 - - [08/Aug/2018 16:30:21] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:30:21,883 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:30:22,301 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:30:22,355 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:30:22,356 - INFO - 127.0.0.1 - - [08/Aug/2018 16:30:22] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:30:22,357 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:36:12,933 - DEBUG - INICIANDO...
+ 2018-08-08 16:36:12,980 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ 2018-08-08 16:36:12,982 - INFO -  * Restarting with stat
+ 2018-08-08 16:36:13,190 - DEBUG - INICIANDO...
+ 2018-08-08 16:36:13,207 - WARNING -  * Debugger is active!
+ 2018-08-08 16:36:13,207 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 16:36:15,480 - DEBUG - INICIANDO...
+ 2018-08-08 16:36:23,557 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:36:23,561 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:36:23,630 - INFO - 127.0.0.1 - - [08/Aug/2018 16:36:23] "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:36:23,631 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:36:37,304 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:36:37,336 - INFO - 127.0.0.1 - - [08/Aug/2018 16:36:37] "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 -
+ 2018-08-08 16:36:37,337 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 500 None
+ 2018-08-08 16:36:37,771 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:36:37,778 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:36:37,780 - INFO - 127.0.0.1 - - [08/Aug/2018 16:36:37] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:36:37,781 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:36:38,316 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:36:38,386 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:36:38,387 - INFO - 127.0.0.1 - - [08/Aug/2018 16:36:38] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:36:38,388 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:36:45,588 - DEBUG - INICIANDO...
+ 2018-08-08 16:36:49,204 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:36:49,767 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:36:50,183 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:36:57,951 - DEBUG - INICIANDO...
+ 2018-08-08 16:37:00,666 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:01,091 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:01,497 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:07,339 - DEBUG - INICIANDO...
+ 2018-08-08 16:37:07,729 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:08,222 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:08,657 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:11,194 - DEBUG - INICIANDO...
+ 2018-08-08 16:37:11,212 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ 2018-08-08 16:37:11,212 - INFO -  * Restarting with stat
+ 2018-08-08 16:37:11,400 - DEBUG - INICIANDO...
+ 2018-08-08 16:37:11,416 - WARNING -  * Debugger is active!
+ 2018-08-08 16:37:11,416 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 16:37:14,506 - DEBUG - INICIANDO...
+ 2018-08-08 16:37:14,953 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:14,968 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:37:15,029 - INFO - 127.0.0.1 - - [08/Aug/2018 16:37:15] "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:37:15,030 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:37:15,440 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:15,447 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:37:15,448 - INFO - 127.0.0.1 - - [08/Aug/2018 16:37:15] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:37:15,449 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:37:15,882 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:15,953 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:37:15,954 - INFO - 127.0.0.1 - - [08/Aug/2018 16:37:15] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:37:15,955 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:37:20,869 - DEBUG - INICIANDO...
+ 2018-08-08 16:37:21,685 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:21,693 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:37:21,762 - INFO - 127.0.0.1 - - [08/Aug/2018 16:37:21] "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:37:21,763 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:37:22,182 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:22,188 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:37:22,189 - INFO - 127.0.0.1 - - [08/Aug/2018 16:37:22] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:37:22,189 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:37:22,598 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:37:22,669 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:37:22,671 - INFO - 127.0.0.1 - - [08/Aug/2018 16:37:22] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:37:22,671 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:44:29,363 - DEBUG - INICIANDO...
+ 2018-08-08 16:44:29,858 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:44:29,865 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:44:29,942 - INFO - 127.0.0.1 - - [08/Aug/2018 16:44:29] "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:44:29,943 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:44:30,396 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:44:30,402 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:44:30,404 - INFO - 127.0.0.1 - - [08/Aug/2018 16:44:30] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:44:30,405 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:44:30,846 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:44:30,916 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:44:30,917 - INFO - 127.0.0.1 - - [08/Aug/2018 16:44:30] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:44:30,918 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:44:51,159 - DEBUG - INICIANDO...
+ 2018-08-08 16:44:51,607 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:44:51,613 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:44:51,675 - INFO - 127.0.0.1 - - [08/Aug/2018 16:44:51] "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:44:51,676 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:44:52,261 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:44:52,267 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:44:52,268 - INFO - 127.0.0.1 - - [08/Aug/2018 16:44:52] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:44:52,269 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:44:52,894 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:44:53,099 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:44:53,100 - INFO - 127.0.0.1 - - [08/Aug/2018 16:44:53] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:44:53,101 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:44:57,569 - DEBUG - INICIANDO...
+ 2018-08-08 16:44:58,123 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:44:58,130 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:44:58,191 - INFO - 127.0.0.1 - - [08/Aug/2018 16:44:58] "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:44:58,193 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:44:58,667 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:44:58,674 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:44:58,675 - INFO - 127.0.0.1 - - [08/Aug/2018 16:44:58] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:44:58,676 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:44:59,453 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:44:59,573 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:44:59,574 - INFO - 127.0.0.1 - - [08/Aug/2018 16:44:59] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:44:59,574 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:45:07,830 - DEBUG - INICIANDO...
+ 2018-08-08 16:45:08,252 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:08,255 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:45:08,316 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:08] "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:45:08,317 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:45:08,750 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:08,756 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:45:08,758 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:08] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:45:08,759 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:45:09,228 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:09,298 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:45:09,300 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:09] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:45:09,301 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:45:18,706 - DEBUG - INICIANDO...
+ 2018-08-08 16:45:19,135 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:19,138 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:45:19,199 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:19] "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:45:19,200 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:45:19,659 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:19,663 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:45:19,664 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:19] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:45:19,665 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:45:20,119 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:20,181 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:45:20,183 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:20] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:45:20,184 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:45:34,454 - DEBUG - INICIANDO...
+ 2018-08-08 16:45:34,938 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:34,941 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:45:35,007 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:35] "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:45:35,008 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:45:35,510 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:35,518 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:45:35,520 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:35] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:45:35,520 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:45:36,169 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:36,231 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:45:36,232 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:36] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:45:36,233 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:45:48,082 - DEBUG - INICIANDO...
+ 2018-08-08 16:45:48,602 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:48,606 - INFO - Locatario escluido com sucesso
+ 2018-08-08 16:45:48,824 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:48] "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:45:48,825 - DEBUG - http://localhost:5000 "DELETE /locatario/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:45:49,258 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:49,261 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 16:45:49,261 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:49] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 16:45:49,261 - DEBUG - http://localhost:5000 "GET /locatario/listar HTTP/1.1" 200 3
+ 2018-08-08 16:45:49,835 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:45:49,897 - INFO - Novo locatario salvo com sucesso
+ 2018-08-08 16:45:49,898 - INFO - 127.0.0.1 - - [08/Aug/2018 16:45:49] "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 -
+ 2018-08-08 16:45:49,898 - DEBUG - http://localhost:5000 "POST /locatario/novo/nome=Vanessa HTTP/1.1" 200 28
+ 2018-08-08 16:46:29,820 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/myvenv/lib/python3.5/site-packages/flask/app.py', reloading
+ 2018-08-08 16:46:29,897 - INFO -  * Restarting with stat
+ 2018-08-08 16:46:30,093 - DEBUG - INICIANDO...
+ 2018-08-08 16:46:30,109 - WARNING -  * Debugger is active!
+ 2018-08-08 16:46:30,109 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 16:46:31,131 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/myvenv/lib/python3.5/site-packages/flask/helpers.py', reloading
+ 2018-08-08 16:46:31,191 - INFO -  * Restarting with stat
+ 2018-08-08 16:46:31,384 - DEBUG - INICIANDO...
+ 2018-08-08 16:46:31,400 - WARNING -  * Debugger is active!
+ 2018-08-08 16:46:31,401 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 16:47:17,088 - DEBUG - INICIANDO...
+ 2018-08-08 16:47:23,969 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:47:23,980 - INFO - Nova sala salva com sucesso
+ 2018-08-08 16:47:24,046 - INFO - 127.0.0.1 - - [08/Aug/2018 16:47:24] "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 -
+ 2018-08-08 16:47:24,047 - DEBUG - http://localhost:5000 "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 78
+ 2018-08-08 16:48:05,178 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/app/agenda/views.py', reloading
+ 2018-08-08 16:48:05,250 - INFO -  * Restarting with stat
+ 2018-08-08 16:48:05,450 - DEBUG - INICIANDO...
+ 2018-08-08 16:48:05,469 - WARNING -  * Debugger is active!
+ 2018-08-08 16:48:05,469 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 16:48:06,476 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/app/agenda/views.py', reloading
+ 2018-08-08 16:48:06,523 - INFO -  * Restarting with stat
+ 2018-08-08 16:48:06,728 - DEBUG - INICIANDO...
+ 2018-08-08 16:48:06,745 - WARNING -  * Debugger is active!
+ 2018-08-08 16:48:06,745 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 16:48:34,322 - DEBUG - INICIANDO...
+ 2018-08-08 16:48:39,072 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:48:39,081 - INFO - Nova sala salva com sucesso
+ 2018-08-08 16:48:39,086 - INFO - Não foi possivel salva sala
+ 2018-08-08 16:48:39,088 - INFO - 127.0.0.1 - - [08/Aug/2018 16:48:39] "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 -
+ 2018-08-08 16:48:39,089 - DEBUG - http://localhost:5000 "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 29
+ 2018-08-08 16:48:52,403 - DEBUG - INICIANDO...
+ 2018-08-08 16:48:52,815 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:48:52,819 - INFO - Retornando lista de sala na tela
+ 2018-08-08 16:48:52,827 - INFO - 127.0.0.1 - - [08/Aug/2018 16:48:52] "GET /sala/listar HTTP/1.1" 200 -
+ 2018-08-08 16:48:52,828 - DEBUG - http://localhost:5000 "GET /sala/listar HTTP/1.1" 200 68
+ 2018-08-08 16:48:53,228 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:48:53,231 - INFO - Nova sala salva com sucesso
+ 2018-08-08 16:48:53,234 - INFO - Não foi possivel salva sala
+ 2018-08-08 16:48:53,235 - INFO - 127.0.0.1 - - [08/Aug/2018 16:48:53] "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 -
+ 2018-08-08 16:48:53,236 - DEBUG - http://localhost:5000 "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 29
+ 2018-08-08 16:48:58,326 - DEBUG - INICIANDO...
+ 2018-08-08 16:48:58,751 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:48:58,771 - INFO - 127.0.0.1 - - [08/Aug/2018 16:48:58] "GET /sala/lista HTTP/1.1" 404 -
+ 2018-08-08 16:48:58,772 - DEBUG - http://localhost:5000 "GET /sala/lista HTTP/1.1" 404 233
+ 2018-08-08 16:48:59,205 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:48:59,209 - INFO - Nova sala salva com sucesso
+ 2018-08-08 16:48:59,212 - INFO - Não foi possivel salva sala
+ 2018-08-08 16:48:59,213 - INFO - 127.0.0.1 - - [08/Aug/2018 16:48:59] "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 -
+ 2018-08-08 16:48:59,214 - DEBUG - http://localhost:5000 "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 29
+ 2018-08-08 16:55:45,530 - DEBUG - INICIANDO...
+ 2018-08-08 16:55:45,972 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:55:45,976 - INFO - 127.0.0.1 - - [08/Aug/2018 16:55:45] "DELETE /sala/editar/id=2&nome=Amarelo&numero=30 HTTP/1.1" 405 -
+ 2018-08-08 16:55:45,977 - DEBUG - http://localhost:5000 "DELETE /sala/editar/id=2&nome=Amarelo&numero=30 HTTP/1.1" 405 70
+ 2018-08-08 16:55:46,407 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:55:46,408 - INFO - Retornando lista de sala na tela
+ 2018-08-08 16:55:46,410 - INFO - 127.0.0.1 - - [08/Aug/2018 16:55:46] "GET /sala/listar HTTP/1.1" 200 -
+ 2018-08-08 16:55:46,410 - DEBUG - http://localhost:5000 "GET /sala/listar HTTP/1.1" 200 68
+ 2018-08-08 16:55:46,818 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:55:46,822 - INFO - Nova sala salva com sucesso
+ 2018-08-08 16:55:46,824 - INFO - Não foi possivel salva sala
+ 2018-08-08 16:55:46,826 - INFO - 127.0.0.1 - - [08/Aug/2018 16:55:46] "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 -
+ 2018-08-08 16:55:46,827 - DEBUG - http://localhost:5000 "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 29
+ 2018-08-08 16:56:01,700 - DEBUG - INICIANDO...
+ 2018-08-08 16:56:02,119 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:56:02,124 - INFO - 127.0.0.1 - - [08/Aug/2018 16:56:02] "DELETE /sala/editar/id=1&nome=Amarelo&numero=30 HTTP/1.1" 405 -
+ 2018-08-08 16:56:02,125 - DEBUG - http://localhost:5000 "DELETE /sala/editar/id=1&nome=Amarelo&numero=30 HTTP/1.1" 405 70
+ 2018-08-08 16:56:02,548 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:56:02,555 - INFO - Sala escluida com sucesso
+ 2018-08-08 16:56:02,614 - INFO - 127.0.0.1 - - [08/Aug/2018 16:56:02] "DELETE /sala/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:56:02,615 - DEBUG - http://localhost:5000 "DELETE /sala/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:56:03,507 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:56:03,508 - INFO - Retornando lista de sala na tela
+ 2018-08-08 16:56:03,509 - INFO - 127.0.0.1 - - [08/Aug/2018 16:56:03] "GET /sala/listar HTTP/1.1" 200 -
+ 2018-08-08 16:56:03,510 - DEBUG - http://localhost:5000 "GET /sala/listar HTTP/1.1" 200 3
+ 2018-08-08 16:56:04,116 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:56:04,118 - INFO - Nova sala salva com sucesso
+ 2018-08-08 16:56:04,180 - INFO - 127.0.0.1 - - [08/Aug/2018 16:56:04] "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 -
+ 2018-08-08 16:56:04,180 - DEBUG - http://localhost:5000 "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 78
+ 2018-08-08 16:56:20,237 - DEBUG - INICIANDO...
+ 2018-08-08 16:56:20,755 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:56:20,765 - INFO - Sala editada com sucesso
+ 2018-08-08 16:56:20,830 - INFO - 127.0.0.1 - - [08/Aug/2018 16:56:20] "PUT /sala/editar/id=1&nome=Amarelo&numero=30 HTTP/1.1" 200 -
+ 2018-08-08 16:56:20,831 - DEBUG - http://localhost:5000 "PUT /sala/editar/id=1&nome=Amarelo&numero=30 HTTP/1.1" 200 28
+ 2018-08-08 16:56:21,248 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:56:21,254 - INFO - Sala escluida com sucesso
+ 2018-08-08 16:56:21,329 - INFO - 127.0.0.1 - - [08/Aug/2018 16:56:21] "DELETE /sala/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 16:56:21,329 - DEBUG - http://localhost:5000 "DELETE /sala/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 16:56:21,798 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:56:21,800 - INFO - Retornando lista de sala na tela
+ 2018-08-08 16:56:21,805 - INFO - 127.0.0.1 - - [08/Aug/2018 16:56:21] "GET /sala/listar HTTP/1.1" 200 -
+ 2018-08-08 16:56:21,806 - DEBUG - http://localhost:5000 "GET /sala/listar HTTP/1.1" 200 3
+ 2018-08-08 16:56:22,331 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 16:56:22,334 - INFO - Nova sala salva com sucesso
+ 2018-08-08 16:56:22,397 - INFO - 127.0.0.1 - - [08/Aug/2018 16:56:22] "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 -
+ 2018-08-08 16:56:22,398 - DEBUG - http://localhost:5000 "POST /sala/novo/nome=Rosa&numero=30 HTTP/1.1" 200 78
+ 2018-08-08 17:01:51,569 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/app/agenda/views.py', reloading
+ 2018-08-08 17:01:51,625 - INFO -  * Restarting with stat
+ 2018-08-08 17:01:51,834 - DEBUG - INICIANDO...
+ 2018-08-08 17:01:51,852 - WARNING -  * Debugger is active!
+ 2018-08-08 17:01:51,852 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 17:03:18,375 - DEBUG - INICIANDO...
+ 2018-08-08 17:03:20,331 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:03:20,340 - INFO - 127.0.0.1 - - [08/Aug/2018 17:03:20] "PUT /agendamento/editar/id=1&sala=2&locatario=1&data=10-08-2018&hora_inicio=10:30&hora_fim=12:00 HTTP/1.1" 500 -
+ 2018-08-08 17:03:20,340 - DEBUG - http://localhost:5000 "PUT /agendamento/editar/id=1&sala=2&locatario=1&data=10-08-2018&hora_inicio=10:30&hora_fim=12:00 HTTP/1.1" 500 None
+ 2018-08-08 17:03:21,339 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:03:21,347 - INFO - 127.0.0.1 - - [08/Aug/2018 17:03:21] "DELETE /agendamento/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 17:03:21,347 - DEBUG - http://localhost:5000 "DELETE /agendamento/excluir/id=1 HTTP/1.1" 200 23
+ 2018-08-08 17:03:22,548 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:03:22,581 - INFO - Filtrando agendamento por data: 10-08-2018
+ 2018-08-08 17:03:22,582 - INFO - 127.0.0.1 - - [08/Aug/2018 17:03:22] "GET /agendamento/filtrar/data=10-08-2018 HTTP/1.1" 200 -
+ 2018-08-08 17:03:22,583 - DEBUG - http://localhost:5000 "GET /agendamento/filtrar/data=10-08-2018 HTTP/1.1" 200 3
+ 2018-08-08 17:03:23,668 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:03:23,671 - INFO - Filtrando agendamento por sala: 2
+ 2018-08-08 17:03:23,671 - INFO - 127.0.0.1 - - [08/Aug/2018 17:03:23] "GET /agendamento/filtrar/sala=2 HTTP/1.1" 200 -
+ 2018-08-08 17:03:23,672 - DEBUG - http://localhost:5000 "GET /agendamento/filtrar/sala=2 HTTP/1.1" 200 3
+ 2018-08-08 17:03:25,002 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:03:25,005 - INFO - Retornando lista de sala na tela
+ 2018-08-08 17:03:25,009 - INFO - 127.0.0.1 - - [08/Aug/2018 17:03:25] "GET /sala/listar HTTP/1.1" 200 -
+ 2018-08-08 17:03:25,010 - DEBUG - http://localhost:5000 "GET /sala/listar HTTP/1.1" 200 68
+ 2018-08-08 17:03:26,247 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:03:26,317 - INFO - Novo agendamento feito com sucesso
+ 2018-08-08 17:03:26,319 - INFO - 127.0.0.1 - - [08/Aug/2018 17:03:26] "POST /agendamento/novo/sala=1&locatario=1&data=09-08-2018&hora_inicio=09:30&hora_fim=11:30 HTTP/1.1" 200 -
+ 2018-08-08 17:03:26,320 - DEBUG - http://localhost:5000 "POST /agendamento/novo/sala=1&locatario=1&data=09-08-2018&hora_inicio=09:30&hora_fim=11:30 HTTP/1.1" 200 28
+ 2018-08-08 17:05:05,988 - INFO - 127.0.0.1 - - [08/Aug/2018 17:05:05] "POST /agendamento/novo/sala=1&locatario=1&data=09-08-2018&hora_inicio=09:30&hora_fim=11:30 HTTP/1.1" 200 -
+ 2018-08-08 17:05:19,975 - INFO - 127.0.0.1 - - [08/Aug/2018 17:05:19] "POST /agendamento/listar HTTP/1.1" 405 -
+ 2018-08-08 17:05:23,361 - INFO - Retornando lista de agendamento na tela
+ 2018-08-08 17:05:23,362 - INFO - 127.0.0.1 - - [08/Aug/2018 17:05:23] "GET /agendamento/listar HTTP/1.1" 200 -
+ 2018-08-08 17:05:31,232 - INFO - 127.0.0.1 - - [08/Aug/2018 17:05:31] "GET /agendamento/excluit/id=1 HTTP/1.1" 404 -
+ 2018-08-08 17:05:34,953 - INFO - 127.0.0.1 - - [08/Aug/2018 17:05:34] "DELETE /agendamento/excluit/id=1 HTTP/1.1" 404 -
+ 2018-08-08 17:05:39,555 - INFO - Agendamento excluido com sucesso
+ 2018-08-08 17:05:39,556 - INFO - 127.0.0.1 - - [08/Aug/2018 17:05:39] "DELETE /agendamento/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 17:05:54,006 - INFO - 127.0.0.1 - - [08/Aug/2018 17:05:54] "PUT /agendamento/novo/sala=1&locatario=1&data=09-08-2018&hora_inicio=09:30&hora_fim=11:30 HTTP/1.1" 405 -
+ 2018-08-08 17:08:17,461 - INFO - Retornando lista de agendamento na tela
+ 2018-08-08 17:08:17,462 - INFO - 127.0.0.1 - - [08/Aug/2018 17:08:17] "GET /agendamento/listar HTTP/1.1" 200 -
+ 2018-08-08 17:08:33,808 - INFO - Novo agendamento feito com sucesso
+ 2018-08-08 17:08:33,809 - INFO - 127.0.0.1 - - [08/Aug/2018 17:08:33] "POST /agendamento/novo/sala=1&locatario=1&data=09-08-2018&hora_inicio=09:30&hora_fim=11:30 HTTP/1.1" 200 -
+ 2018-08-08 17:08:45,194 - INFO - Retornando lista de sala na tela
+ 2018-08-08 17:08:45,198 - INFO - 127.0.0.1 - - [08/Aug/2018 17:08:45] "GET /sala/listar HTTP/1.1" 200 -
+ 2018-08-08 17:08:56,347 - INFO - Retornando lista de agendamento na tela
+ 2018-08-08 17:08:56,348 - INFO - 127.0.0.1 - - [08/Aug/2018 17:08:56] "GET /agendamento/listar HTTP/1.1" 200 -
+ 2018-08-08 17:09:05,562 - INFO - 127.0.0.1 - - [08/Aug/2018 17:09:05] "PUT /agendamento/novo/sala=1&locatario=1&data=09-08-2018&hora_inicio=09:30&hora_fim=11:30 HTTP/1.1" 405 -
+ 2018-08-08 17:09:09,851 - INFO - Agendamento editado salva com sucesso
+ 2018-08-08 17:09:09,851 - INFO - 127.0.0.1 - - [08/Aug/2018 17:09:09] "PUT /agendamento/editar/id=1&sala=2&locatario=1&data=10-08-2018&hora_inicio=10:30&hora_fim=12:00 HTTP/1.1" 200 -
+ 2018-08-08 17:13:41,178 - DEBUG - INICIANDO...
+ 2018-08-08 17:13:41,582 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:41,587 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:41] "PUT /agendamento/editar/id=1&sala=2&locatario=1&data=10-08-2018&hora_inicio=10:30&hora_fim=12:00 HTTP/1.1" 200 -
+ 2018-08-08 17:13:41,587 - DEBUG - http://localhost:5000 "PUT /agendamento/editar/id=1&sala=2&locatario=1&data=10-08-2018&hora_inicio=10:30&hora_fim=12:00 HTTP/1.1" 200 124
+ 2018-08-08 17:13:42,121 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:42,192 - INFO - Agendamento excluido com sucesso
+ 2018-08-08 17:13:42,193 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:42] "DELETE /agendamento/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 17:13:42,194 - DEBUG - http://localhost:5000 "DELETE /agendamento/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 17:13:42,588 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:42,599 - INFO - Filtrando agendamento por data: 10-08-2018
+ 2018-08-08 17:13:42,600 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:42] "GET /agendamento/filtrar/data=10-08-2018 HTTP/1.1" 200 -
+ 2018-08-08 17:13:42,601 - DEBUG - http://localhost:5000 "GET /agendamento/filtrar/data=10-08-2018 HTTP/1.1" 200 3
+ 2018-08-08 17:13:43,030 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:43,036 - INFO - Filtrando agendamento por sala: 2
+ 2018-08-08 17:13:43,038 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:43] "GET /agendamento/filtrar/sala=2 HTTP/1.1" 200 -
+ 2018-08-08 17:13:43,039 - DEBUG - http://localhost:5000 "GET /agendamento/filtrar/sala=2 HTTP/1.1" 200 3
+ 2018-08-08 17:13:43,435 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:43,442 - INFO - Retornando lista de agendamento na tela
+ 2018-08-08 17:13:43,443 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:43] "GET /agendamento/listar HTTP/1.1" 200 -
+ 2018-08-08 17:13:43,444 - DEBUG - http://localhost:5000 "GET /agendamento/listar HTTP/1.1" 200 3
+ 2018-08-08 17:13:43,871 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:43,933 - INFO - Novo agendamento feito com sucesso
+ 2018-08-08 17:13:43,935 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:43] "POST /agendamento/novo/sala=1&locatario=1&data=09-08-2018&hora_inicio=09:30&hora_fim=11:30 HTTP/1.1" 200 -
+ 2018-08-08 17:13:43,936 - DEBUG - http://localhost:5000 "POST /agendamento/novo/sala=1&locatario=1&data=09-08-2018&hora_inicio=09:30&hora_fim=11:30 HTTP/1.1" 200 28
+ 2018-08-08 17:13:55,062 - DEBUG - INICIANDO...
+ 2018-08-08 17:13:55,456 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:55,550 - INFO - Agendamento editado salva com sucesso
+ 2018-08-08 17:13:55,551 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:55] "PUT /agendamento/editar/id=1&sala=2&locatario=1&data=10-08-2018&hora_inicio=10:30&hora_fim=12:00 HTTP/1.1" 200 -
+ 2018-08-08 17:13:55,552 - DEBUG - http://localhost:5000 "PUT /agendamento/editar/id=1&sala=2&locatario=1&data=10-08-2018&hora_inicio=10:30&hora_fim=12:00 HTTP/1.1" 200 28
+ 2018-08-08 17:13:55,952 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:56,016 - INFO - Agendamento excluido com sucesso
+ 2018-08-08 17:13:56,018 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:56] "DELETE /agendamento/excluir/id=1 HTTP/1.1" 200 -
+ 2018-08-08 17:13:56,019 - DEBUG - http://localhost:5000 "DELETE /agendamento/excluir/id=1 HTTP/1.1" 200 28
+ 2018-08-08 17:13:56,410 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:56,417 - INFO - Filtrando agendamento por data: 10-08-2018
+ 2018-08-08 17:13:56,417 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:56] "GET /agendamento/filtrar/data=10-08-2018 HTTP/1.1" 200 -
+ 2018-08-08 17:13:56,418 - DEBUG - http://localhost:5000 "GET /agendamento/filtrar/data=10-08-2018 HTTP/1.1" 200 3
+ 2018-08-08 17:13:56,821 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:56,828 - INFO - Filtrando agendamento por sala: 2
+ 2018-08-08 17:13:56,829 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:56] "GET /agendamento/filtrar/sala=2 HTTP/1.1" 200 -
+ 2018-08-08 17:13:56,830 - DEBUG - http://localhost:5000 "GET /agendamento/filtrar/sala=2 HTTP/1.1" 200 3
+ 2018-08-08 17:13:57,202 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:57,209 - INFO - Retornando lista de agendamento na tela
+ 2018-08-08 17:13:57,210 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:57] "GET /agendamento/listar HTTP/1.1" 200 -
+ 2018-08-08 17:13:57,211 - DEBUG - http://localhost:5000 "GET /agendamento/listar HTTP/1.1" 200 3
+ 2018-08-08 17:13:57,633 - DEBUG - Starting new HTTP connection (1): localhost:5000
+ 2018-08-08 17:13:57,733 - INFO - Novo agendamento feito com sucesso
+ 2018-08-08 17:13:57,733 - INFO - 127.0.0.1 - - [08/Aug/2018 17:13:57] "POST /agendamento/novo/sala=1&locatario=1&data=09-08-2018&hora_inicio=09:30&hora_fim=11:30 HTTP/1.1" 200 -
+ 2018-08-08 17:13:57,733 - DEBUG - http://localhost:5000 "POST /agendamento/novo/sala=1&locatario=1&data=09-08-2018&hora_inicio=09:30&hora_fim=11:30 HTTP/1.1" 200 28
+ 2018-08-08 17:15:01,898 - INFO - 127.0.0.1 - - [08/Aug/2018 17:15:01] "PUT /agendamento/listar HTTP/1.1" 405 -
+ 2018-08-08 17:15:05,053 - INFO - Retornando lista de agendamento na tela
+ 2018-08-08 17:15:05,055 - INFO - 127.0.0.1 - - [08/Aug/2018 17:15:05] "GET /agendamento/listar HTTP/1.1" 200 -
+ 2018-08-08 17:15:17,496 - INFO - 127.0.0.1 - - [08/Aug/2018 17:15:17] "DELETE /agendamento/excluir/id=3 HTTP/1.1" 200 -
+ 2018-08-08 17:16:24,039 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/app/agenda/views.py', reloading
+ 2018-08-08 17:16:24,084 - INFO -  * Restarting with stat
+ 2018-08-08 17:16:24,294 - DEBUG - INICIANDO...
+ 2018-08-08 17:16:24,311 - WARNING -  * Debugger is active!
+ 2018-08-08 17:16:24,311 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 17:16:27,325 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/app/agenda/views.py', reloading
+ 2018-08-08 17:16:27,367 - INFO -  * Restarting with stat
+ 2018-08-08 17:16:27,584 - DEBUG - INICIANDO...
+ 2018-08-08 17:16:27,604 - WARNING -  * Debugger is active!
+ 2018-08-08 17:16:27,604 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 17:16:30,025 - INFO - 127.0.0.1 - - [08/Aug/2018 17:16:30] "DELETE /agendamento/excluir/id=3 HTTP/1.1" 200 -
+ 2018-08-08 17:23:36,488 - INFO - 127.0.0.1 - - [08/Aug/2018 17:23:36] "DELETE /agendamento/listar HTTP/1.1" 405 -
+ 2018-08-08 17:23:40,233 - INFO - Retornando lista de agendamento na tela
+ 2018-08-08 17:23:40,234 - INFO - 127.0.0.1 - - [08/Aug/2018 17:23:40] "GET /agendamento/listar HTTP/1.1" 200 -
+ 2018-08-08 17:23:45,982 - INFO - Retornando lista de locatarios na tela
+ 2018-08-08 17:23:45,983 - INFO - 127.0.0.1 - - [08/Aug/2018 17:23:45] "GET /locatario/listar HTTP/1.1" 200 -
+ 2018-08-08 17:23:49,250 - INFO - Retornando lista de sala na tela
+ 2018-08-08 17:23:49,253 - INFO - 127.0.0.1 - - [08/Aug/2018 17:23:49] "GET /sala/listar HTTP/1.1" 200 -
+ 2018-08-08 17:25:45,288 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/app/agenda/views.py', reloading
+ 2018-08-08 17:25:45,336 - INFO -  * Restarting with stat
+ 2018-08-08 17:25:45,524 - DEBUG - INICIANDO...
+ 2018-08-08 17:25:45,545 - WARNING -  * Debugger is active!
+ 2018-08-08 17:25:45,546 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 17:25:54,611 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/app/agenda/views.py', reloading
+ 2018-08-08 17:25:54,652 - INFO -  * Restarting with stat
+ 2018-08-08 17:25:54,857 - DEBUG - INICIANDO...
+ 2018-08-08 17:25:54,873 - WARNING -  * Debugger is active!
+ 2018-08-08 17:25:54,873 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 17:26:29,146 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/app/agenda/views.py', reloading
+ 2018-08-08 17:26:29,207 - INFO -  * Restarting with stat
+ 2018-08-08 17:26:29,403 - DEBUG - INICIANDO...
+ 2018-08-08 17:26:29,421 - WARNING -  * Debugger is active!
+ 2018-08-08 17:26:29,421 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 17:26:35,474 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/config.py', reloading
+ 2018-08-08 17:26:35,550 - INFO -  * Restarting with stat
+ 2018-08-08 17:26:35,766 - DEBUG - INICIANDO...
+ 2018-08-08 17:26:35,788 - WARNING -  * Debugger is active!
+ 2018-08-08 17:26:35,788 - INFO -  * Debugger PIN: 110-189-137
+ 2018-08-08 17:26:42,840 - INFO -  * Detected change in '/home/digesto19/projects/aprendendo-api/config.py', reloading
+ 2018-08-08 17:26:42,895 - INFO -  * Restarting with stat
+ 2018-08-08 17:26:43,117 - DEBUG - INICIANDO...
+ 2018-08-08 17:26:43,140 - WARNING -  * Debugger is active!
+ 2018-08-08 17:26:43,141 - INFO -  * Debugger PIN: 110-189-137

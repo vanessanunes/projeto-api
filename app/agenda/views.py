@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
 from app import app, db
@@ -10,7 +11,6 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 api = Api(app)
 
 filename=os.path.join(basedir, 'logs.txt')
-# filename=filename,
 logging.basicConfig(filename=filename, level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 logging.debug('INICIANDO...')
 
@@ -20,11 +20,6 @@ def verificar_agendas(horario_inicio, horario_fim, sala):
         return True
 
     return False
-
-class HelloWorld(Resource):
-    def get(self):
-        logging.info('oins')
-        return dict(hello='world')
 
 # LOCATARIO
 
@@ -49,6 +44,18 @@ class ListarLocatario(Resource):
             pessoas['pessoa{}'.format(i.id)] = {'id':i.id, 'nome':i.nome}
         logging.info('Retornando lista de locatarios na tela')
         return dict(pessoas)
+
+class ExcluirLocatario(Resource):
+    def delete(self, id):
+        delet = Locatario.query.get(id)
+        db.session.delete(delet)
+        try:
+            logging.info('Locatario escluido com sucesso')
+            db.session.commit()
+            return dict(resultado='TRUE')
+        except:
+            logging.info('Não foi possivel excluir Locatario')
+            return dict(resultado='FALSE')
 
 # SALA
 
@@ -174,7 +181,7 @@ class ExcluirAgendamento(Resource):
     def delete(self, id):
         excluir = Agendamento.query.get(id)
         if not excluir:
-            return 'id {} não existe'.format(id)
+            return dict(resultado='FALSE')
         db.session.delete(excluir)
         try:
             db.session.commit()
@@ -196,7 +203,6 @@ class FiltrarAgendamentoSala(Resource):
         logging.info('Filtrando agendamento por sala: {}'.format(sala))
         return dict(agendamentos)
 
-
 class FiltrarAgendamentoData(Resource):
     def get(self, data):
         data_inicio = datetime.strptime(data, '%d-%m-%Y')
@@ -213,10 +219,11 @@ class FiltrarAgendamentoData(Resource):
         logging.info('Filtrando agendamento por data: {}'.format(data))
         return dict(agendamentos)
 
+# ROTAS
 
-api.add_resource(HelloWorld, '/')
 api.add_resource(NovoLocatario, '/locatario/novo/nome=<string:nome>')
 api.add_resource(ListarLocatario, '/locatario/listar')
+api.add_resource(ExcluirLocatario, '/locatario/excluir/id=<int:id>')
 
 api.add_resource(ListarSala, '/sala/listar')
 api.add_resource(NovaSala, '/sala/novo/nome=<string:nome>&numero=<int:numero>')
@@ -227,7 +234,6 @@ api.add_resource(ListarAgendamento, '/agendamento/listar')
 
 api.add_resource(FiltrarAgendamentoSala, '/agendamento/filtrar/sala=<int:sala>')
 api.add_resource(FiltrarAgendamentoData, '/agendamento/filtrar/data=<string:data>') # data apenas incluir o dia: 27-12-1993
-
 
 api.add_resource(NovoAgendamento, '/agendamento/novo/sala=<int:sala>&locatario=<int:locatario>&data=<string:data>&hora_inicio=<string:hora_inicio>&hora_fim=<string:hora_fim>')
 api.add_resource(EditarAgendamento, '/agendamento/editar/id=<int:id>&sala=<int:sala>&locatario=<int:locatario>&data=<string:data>&hora_inicio=<string:hora_inicio>&hora_fim=<string:hora_fim>')

@@ -2,6 +2,8 @@ from app import db
 from datetime import datetime
 
 class Sala(db.Model):
+    __table_args__ = {'extend_existing': True}
+
     id = db.Column(db.Integer, primary_key=True)
     numero = db.Column(db.Integer, unique=True, nullable=False)
     nome_sala = db.Column(db.String(80), unique=True, nullable=False)
@@ -14,6 +16,8 @@ class Sala(db.Model):
         return '<Sala %d>' % self.id
 
 class Agendamento(db.Model):
+    __table_args__ = {'extend_existing': True}
+
     id = db.Column(db.Integer, primary_key=True)
     id_sala = db.Column(db.Integer, db.ForeignKey('sala.id'), nullable=False)
     id_locatario = db.Column(db.Integer, db.ForeignKey('locatario.id'), nullable=False)
@@ -31,12 +35,15 @@ class Agendamento(db.Model):
         return '<Agendamento %d>' % self.id
 
 class Locatario(db.Model):
-        id = db.Column(db.Integer, primary_key=True)
-        nome = db.Column(db.String(120), nullable=False)
+    __table_args__ = {'extend_existing': True}
 
-        def __init__(self, nome):
-            self.nome = nome
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(120), nullable=False)
 
-        def __repr__(self):
-            return '<Locatario %r>' % (self.nome)
+    def __init__(self, nome):
+        self.nome = nome
+
+    def __repr__(self):
+        return '<Locatario %r>' % (self.nome)
+
 
