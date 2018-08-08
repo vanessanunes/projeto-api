@@ -6,13 +6,15 @@ Desenvolvido utilizando Python 3, framework Flask, e as bibliotecas Flask-RESTfu
 
 Clone esse repositório com:
  
- ```git clone https://github.com/vanessanunes/aprendendo-api.git```
+ ```git clone https://github.com/vanessanunes/projeto-api.git```
 
+Instale o virtualenv para criar um ambiente:
+
+```sudo pip install virtualenv```
 
 Crie um ambiente virtual:
 
-```python -m venv myvenv```
-
+```virtualenv myvenv```
 
 Para entrar no virtualenv:
 
