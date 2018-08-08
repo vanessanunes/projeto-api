@@ -1,6 +1,6 @@
 # projeto-api
 
-Desenvolvido utilizando Python 3, framework Flask, e as bibliotecas Flask-RESTful, Flask-SQLAlchemy, BeautifulSoup, logging..
+Desenvolvido utilizando Python 3, framework Flask, e as bibliotecas Flask-RESTful, Flask-SQLAlchemy, BeautifulSoup, logging e unit test.
 
 ## Mão na massa
 
